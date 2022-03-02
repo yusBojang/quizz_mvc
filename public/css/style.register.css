@@ -1,0 +1,135 @@
+body{
+  
+    background-image: url('../img/bac.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    }
+  
+  .bar{
+    display: flex;
+    border: 1px solid;
+    height: 5rem;
+    background-color: #052426;  
+  }
+  
+  .pp{
+    display: flex;
+    flex: 9;
+  }
+  
+  .pp h1{
+    color: white;
+  }
+  
+  .im{
+    display: flex;
+    flex: 6;
+  }
+  
+  .container{
+  
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+  }
+  
+  .part1{
+   
+    height: auto;
+    width: 30%;
+    background-color: white;
+  }
+  
+  .part2{
+   
+    height: 89vh;
+    width: 20%;
+    background-color: white;
+  }
+  
+  
+  
+  
+  .input {
+      display: flex;
+      flex-direction: column-reverse;
+      position: relative;
+      padding-top: 1rem;
+      box-sizing: border-box;
+    
+    
+      /* &+.input {
+          margin-top: 1.5rem;
+      } */
+  }
+  
+  .part1 h1{
+    margin-left: 1rem;
+  }
+  
+  .part1 p {
+    margin-left: 1rem;
+  }
+  
+  
+  .input input{
+    height: 5vh;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    border-radius: 10px;
+    
+  }
+  
+  label{
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+  
+  .input input:focus{
+    border-color: skyblue;
+    box-shadow: inset 0px 0px 2px 2px rgba(3, 238, 247, 0.25);
+  
+    }
+  
+    .input input:hover{
+      border: solid 2px skyblue;
+      }
+    
+  
+     .fichier{
+      
+        padding: 10px;
+        margin: 10px;
+        display: flex;
+        align-items: flex-end;
+        justify-content: flex-end;
+      }
+  .fichier input{
+    width: 45%;
+    height: 4vh;
+    background-color: aqua;
+    border: none;
+    
+  }
+  
+  .end{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  
+  .end input{
+    width: 45%;
+    height: 4vh;
+    background-color: aqua;
+    border: none;
+  }
+  
+  .part2 img{
+    margin-left: 1rem;
+  }
+  
+  

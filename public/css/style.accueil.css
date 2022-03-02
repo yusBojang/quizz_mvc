@@ -1,0 +1,133 @@
+
+body{
+
+  background-image: url('../img/bac.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow-x: hidden;
+  padding: 0;
+  margin: 0;
+}  
+
+table{
+  width: 100%;
+  border: 2px solid skyblue;
+}
+
+td{
+  text-align: center  ;
+  padding: 10px;
+}
+
+.bar{
+  display: flex;
+  border: 1px solid;
+  height: 5rem;
+  width: 100%;
+  background-color: #052426;  
+}
+
+.pp{
+  display: flex;
+  flex: 9;
+}
+
+.pp h1{
+  color: white;
+}
+
+
+
+
+.container{
+
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.big{
+  
+  height: 75vh;
+  width: 80%;
+  display: flex;
+  background-color:#f3eded;
+
+  
+}
+
+.part1{
+
+  flex: 1;
+  background-color: white;
+  margin: 15px;
+  
+}
+
+.part2{
+ 
+  flex: 2;
+  margin: 15px;
+  background-color:white;
+}
+
+.connec{
+
+  height: 8vh;
+  width: 80%;
+  background-color: #51bfd0;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.connec button{
+background-color: aqua;
+border: none;
+height: 5vh;
+
+}
+
+.connec button a{
+  text-decoration: none;
+  color: black;
+  
+  }
+.part11{
+  
+  height: 25vh;
+  background: linear-gradient(190deg, #fff,#44c8dd);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.part11 img{
+  width: 50%;
+
+}
+.part1 ul li{
+  padding: 15px;
+  border-bottom: 1px solid #bdb8d7;
+  border-bottom: 1px solid rgba(0,0,0,0.05);
+  border-top: 1px solid rgba(255,255,255,0.05);
+  list-style-type: none;
+}   
+
+.part1 ul li a{
+  color: black;
+  display: block;
+  text-decoration: none;
+  
+}
+
+.part1 ul li a .fas{
+  width: 25px;
+}
+
+.part1  ul li:hover{
+  background-color: #c2bcbc;
+}
+  
+

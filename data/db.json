@@ -1,0 +1,47 @@
+ {
+     "users":[
+                {
+                    "nom":"bojang",
+                    "prenom":"yusupha",
+                    "login":"admin@gmail.com",
+                    "password":"admin",
+                    "role":"ROLE_ADMIN",
+                    "score":0
+                },
+
+                {
+                    "nom":"sow",
+                    "prenom":"rawane",
+                    "login":"joueur@gmail.com",
+                    "password":"joueur",
+                    "role":"ROLE_JOUEUR",
+                    "score":15
+                },
+                {
+                    "nom":"Faye",
+                    "prenom":"Khadija",
+                    "login":"joueur@gmail.com",
+                    "password":"joueur",
+                    "role":"ROLE_JOUEUR",
+                    "score":18
+                },
+                {
+                    "nom":"Niass",
+                    "prenom":"khadim",
+                    "login":"joueur@gmail.com",
+                    "password":"joueur",
+                    "role":"ROLE_JOUEUR",
+                    "score":17
+                },
+                {
+                    "nom":"Der",
+                    "prenom":"Moustapha",
+                    "login":"joueur@gmail.com",
+                    "password":"joueur",
+                    "role":"ROLE_JOUEUR",
+                    "score":15
+                }
+                
+     ]
+      
+ }
