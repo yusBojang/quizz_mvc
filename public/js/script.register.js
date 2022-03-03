@@ -73,7 +73,7 @@ const validateInputs = () =>{
     if(password1Value  === '') {
         setError(password1, 'confirmer votre mot de pass');
     } else if (password1Value !== passwordValue) {
-        setError(password1, "mot de pass ne correspond pas");
+        setError(password1, "mot de passs ne correspond pas");
     } else {
         setSuccess(password1);
     }

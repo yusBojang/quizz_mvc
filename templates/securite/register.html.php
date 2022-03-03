@@ -63,7 +63,7 @@ if(isset( $_SESSION[KEY_ERRORS])){
 			</div>
 			<div class="input">
 			  	<input type="password" class="input-field" name="password" id="password" />
-				  <label class="input-label" name="passwd">password</label>
+				  <label class="input-label" name="passwd">passwordd</label>
           <div class="error"></div>
           <?php   if(isset(  $errors ['password'])):?>
             <p style="color:red"><?= $errors ['password'];?> </p>
