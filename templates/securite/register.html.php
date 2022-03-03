@@ -17,58 +17,65 @@ if(isset( $_SESSION[KEY_ERRORS])){
 </head>
 <body>
   <div class="bar">
-    <div class="im">
-    <img src="<?= WEB_PUBLIC."img/logo.png" ?>" alt="" width="8%">
-    </div>
-    <div class="pp">
-     <h1>LE PLAISIR DE JOUER</h1>
-    </div>
+     <div class="im">
+        <img src="<?= WEB_PUBLIC."img/logo.png" ?>" alt="" width="8%">
+      </div>
+      <div class="pp">
+        <h1>LE PLAISIR DE JOUER</h1>
+      </div>
    
-</div>
+   </div>
 
-<form id="form" action="<?=WEB_ROOT?>"  method="POST" >
-      <input type="hidden" name="controller" value="securite"> 
-      <input type="hidden" name="action" value="register">
-  <div class="container">
-    <div class="part1">
-      <h1>S'INSCRIRE </h1>
-      <p>Pour tester votre niveau de culture generale</p>
+  <form id="form" action="<?=WEB_ROOT?>"  method="POST" id="form" >
+
+        <input type="hidden" name="controller" value="securite"> 
+        <input type="hidden" name="action" value="register">
+    <div class="big">
+      <div class="container">
+    
+        <h1>S'INSCRIRE </h1>
+          <p>Pour tester votre niveau de culture generale</p>
 
       <div class="input">
-				<input type="text" class="input-field" name="nom" />
-				<label class="input-label">nom</label>
-        <?php   if(isset(  $errors ['nom'])):?>
-            <p style="color:red"><?= $errors ['nom'];?> </p>
-          <?php endif?>
+			  	<input type="text" class="input-field" name="nom" id="nom" />
+			  	<label class="input-label">nom</label>
+          <div class="error"></div>
+          <?php   if(isset(  $errors ['nom'])):?>
+              <p style="color:red"><?= $errors ['nom'];?> </p>
+           <?php endif?>
         
 			</div>
-            <div class="input">
-				<input type="text" class="input-field" name="prenom" />
-				<label class="input-label">prenom</label>
-        <?php   if(isset(  $errors ['prenom'])):?>
+      <div class="input">
+				  <input type="text" class="input-field" name="prenom" id="prenom" />
+			  	<label class="input-label">prenom</label>
+          <div class="error"></div>
+          <?php   if(isset(  $errors ['prenom'])):?>
             <p style="color:red"><?= $errors ['prenom'];?> </p>
-          <?php endif?>
+           <?php endif?>
 			</div> 
-						<div class="input">
-				<input type="text" class="input-field" name="login" />
-				<label class="input-label">Login</label>
-        <?php   if(isset(  $errors ['login'])):?>
+			<div class="input">
+				  <input type="text" class="input-field" name="login" id="login" />
+				  <label class="input-label">Login</label>
+          <div class="error"></div>
+          <?php   if(isset(  $errors ['login'])):?>
             <p style="color:red"><?= $errors ['login'];?> </p>
           <?php endif?>
 			</div>
 			<div class="input">
-				<input type="password" class="input-field" name="password" />
-				<label class="input-label" name="passwd">password</label>
-        <?php   if(isset(  $errors ['password'])):?>
+			  	<input type="password" class="input-field" name="password" id="password" />
+				  <label class="input-label" name="passwd">password</label>
+          <div class="error"></div>
+          <?php   if(isset(  $errors ['password'])):?>
             <p style="color:red"><?= $errors ['password'];?> </p>
-          <?php endif?>
+           <?php endif?>
 			</div>
       <div class="input">
-				<input type="password" class="input-field" name="password1" />
-				<label class="input-label" name="passwd">confirmer Password</label>
-        <?php   if(isset(  $errors ['password1'])):?>
+			  	<input type="password" class="input-field" name="password1" id="password1" />
+			  	<label class="input-label" name="passwd">confirmer Password</label>
+          <div class="error"></div>
+         <?php   if(isset(  $errors ['password1'])):?>
             <p style="color:red"><?= $errors ['password1'];?> </p>
-          <?php endif?>
+           <?php endif?>
 			</div>
       <div class="fichier">
         <input type="submit" value="choisir un fichier">
@@ -76,18 +83,24 @@ if(isset( $_SESSION[KEY_ERRORS])){
      <div class="end">
       <input type="submit" value="Creer un compte">
      </div>
-
-     
       
     </div>
 
+
+        
     <div class="part2">
-      <img src="<?= WEB_PUBLIC."img/av1.jpeg" ?>" alt="">
+      <img src="<?= WEB_PUBLIC."img/av.png" ?>" alt="">
 
     </div>
 
-   </div>
-</form>
+    </div>
+
+    </form>
+
+    
+
   
 </body>
+
+<script src="<?= WEB_PUBLIC."js".DIRECTORY_SEPARATOR."script.register.js" ?>"></script>
 </html>
